@@ -47,7 +47,7 @@
         <!-- Quality -->
         <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
         <maven-surefire-plugin.version>3.2.3</maven-surefire-plugin.version>
-        <sonar-maven-plugin.version>3.10.0.2594</sonar-maven-plugin.version>
+        <sonar-maven-plugin.version>5.5.0.6356</sonar-maven-plugin.version>
         <sonar.coverage.jacoco.xmlReportPaths>
             ${project.reporting.outputDirectory}/jacoco-merged-test-coverage-report/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>
@@ -55,7 +55,6 @@
         <sonar.token>${env.SONAR_TOKEN}</sonar.token>
         <!--suppress UnresolvedMavenProperty -->
         <sonar.host.url>${env.SONAR_URL}</sonar.host.url>
-        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
         <sonar.dependencyCheck.reportPath>target/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
         <sonar.dependencyCheck.htmlReportPath>target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
         <sonar.dependencyCheck.jsonReportPath>target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>

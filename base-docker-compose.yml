@@ -19,6 +19,8 @@ services:
       dockerfile: docker/Dockerfile
       context: .
       target: ${STAGE}
+      args:
+        PAYARA_VERSION: ${PAYARA_VERSION:-6.2023.12-jdk17}
     depends_on:
       db:
         condition: service_healthy
